@@ -10,37 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <header class="main-header">
-    <a class="logo-link link" href="./">
-        <span class="logo">Web</span>Studio
-    </a>
-    <nav class="main-navigation">
-        <ul class="navigation-list list">
-            <li class="navigation-list-item"> <a class="nav-list-link link" href="./">Студия</a> </li>
-            <li class="navigation-list-item"> <a class="nav-list-link link" href="./">Портфолио</a> </li>
-            <li class="navigation-list-item"> <a class="nav-list-link link" href="./">Контакты</a> </li>
+    <div class="container header-container">
+        <a class="logo-link link" href="./">
+            <span class="logo">Web</span>Studio
+        </a>
+        <nav class="main-navigation">
+            <ul class="navigation-list list">
+                <li class="navigation-list-item"> <a class="nav-list-link link" href="./index.html">Студия</a> </li>
+                <li class="navigation-list-item"> <a class="nav-list-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-list-item"> <a class="nav-list-link link" href="./index.html">Контакты</a> </li>
+            </ul>
+        </nav>
+        <ul class="contacts-list list">
+            <li class="contacts-list-item"> <a class="contacts-list-link link"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contacts-list-item"><a class="contacts-list-link link" href="tel:+380961111111">+38 096 111 11
+                    11</a>
+            </li>
         </ul>
-    </nav>
-    <ul class="contacts-list list">
-        <li class="contacts-list-item"> <a class="contacts-list-link link"
-                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contacts-list-item"><a class="contacts-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-    </ul>
+    </div>
 </header>
 <main>
     <section class="sample">
-        <!-- <ul class="route-list list">
-            <li class="route-list-item"><a class="route-list-link link" href="./">Все</a></li>
-            <li class="route-list-item"><a class="route-list-link link" href="./">Веб-сайты</a></li>
-            <li class="route-list-item"><a class="route-list-link link" href="./">Приложения</a></li>
-            <li class="route-list-item"><a class="route-list-link link" href="./">Дизайн</a></li>
-            <li class="route-list-item"><a class="route-list-link link" href="./">Маркетинг</a></li>
-        </ul> -->
-    
+        <div class="container sample-container">
         <h1></h1>
         <ul class="route-list list">
             <li class="route-list-item"><button class="route-list-btn" type="button">Все</button></li>
@@ -51,66 +51,87 @@
         </ul>
         <ul class="sample-list list">
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/notebook.jpg" width="370" alt="ноутбук">
                 <h3 class="sample-list-title">Технокряк</h3>
                 <p class="sample-list-description">Веб-сайт</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/basketball.jpg" width="370" alt="баскетбол">
                 <h2 class="sample-list-title">Постер New Orlean vs Golden Star</h2>
                 <p class="sample-list-description">Дизайн</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/pic.jpg" width="370" alt="рыба">
                 <h2 class="sample-list-title">Ресторан Seafood</h2>
                 <p class="sample-list-description">Приложение</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/headphones.jpg" width="370" alt="наушники">
                 <h2 class="sample-list-title">Проект Prime</h2>
                 <p class="sample-list-description">Маркетинг</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/boxes.jpg" width="370" alt="коробки">
                 <h2 class="sample-list-title">Проект Boxes</h2>
                 <p class="sample-list-description">Приложение</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/desktop.jpg" width="370" alt="монитор">
                 <h2 class="sample-list-title">Inspiration has no Borders</h2>
                 <p class="sample-list-description">Веб-сайт</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/book.jpg" width="370" alt="книга">
                 <h2 class="sample-list-title">Издание Limited Edition</h2>
                 <p class="sample-list-description">Дизайн</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/lab.jpg" width="370" alt="ярлык">
                 <h2 class="sample-list-title">Проект LAB</h2>
                 <p class="sample-list-description">Маркетинг</p>
+                </div>
             </li>
             <li class="sample-list-item">
+                <div class="wrapper">
                 <img class="sample-list-pic" src="images/notebook1.jpg" width="370" alt="ноутбук с руками">
                 <h2 class="sample-list-title">Growing Business</h2>
                 <p class="sample-list-description">Приложение</p>
+                </div>
             </li>
 
         </ul>
+        </div>
     </section>
 </main>
 <footer class="main-footer">
-    <a class="logo-footer-link link" href="./"><span class="logo">Web</span>Studio</a>
-    <address>
-        <ul class="address-list list">
-            <li class="address-list-item"><a class="address-list-link-first link" href="">г. Киев, пр-т Леси Украинки,
-                    26</a></li>
-            <li class="address-list-item"><a class="address-list-link link"
-                    href="mailto:info@example.com">info@example.com</a></li>
-            <li class="address-list-item"><a class="address-list-link link" href="tel:+380991111111">+38 099 111 11
-                    11</a></li>
-        </ul>
-    </address>
+    <div class="container main-footer-container">
+        <a class="logo-footer-link link" href="./"><span class="logo">Web</span>Studio</a>
+        <address>
+            <ul class="address-list list">
+                <li class="address-list-item"><a class="address-list-link-first link" href="">г. Киев, пр-т Леси
+                        Украинки, 26</a></li>
+                <li class="address-list-item"><a class="address-list-link link"
+                        href="mailto:info@example.com">info@example.com</a></li>
+                <li class="address-list-item"><a class="address-list-link link" href="tel:+380991111111">+38 099 111 11
+                        11</a></li>
+            </ul>
+        </address>
+    </div>
 </footer>
 </body>
 
