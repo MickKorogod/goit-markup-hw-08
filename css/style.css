@@ -110,18 +110,22 @@ body {
 }
 
 .nav-list-link:hover,
-focus {
+.nav-list-link:focus {
   color: rgba(33, 150, 243, 1);
 }
 .contacts-list-item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-list-link:hover,
-focus {
+.contacts-list-link:focus {
   color: rgba(33, 150, 243, 1);
 }
+.contacts-list-link:hover .contacts-list-icon,
+.contacts-list-link:focus .contacts-list-icon{
+  fill: rgba(33, 150, 243, 1);
+}
+
 .hero {
-  /* background: rgba(47, 48, 58, 1); */
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -471,7 +475,7 @@ margin-bottom: 20px;
   padding-right: 22px;
 }
 .route-list-btn:hover,
-focus {
+.route-list-btn:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -488,7 +492,7 @@ focus {
   margin-top: 30px;
 }
 .sample-list-item:hover,
-focus {
+.sample-list-item:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .wrapper {
