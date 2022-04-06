@@ -95,9 +95,12 @@ body {
   color: rgba(33, 33, 33, 1);
 }
 .contacts-list-icon{
+  margin-right: 10px;
   fill:rgba(117, 117, 117, 1);
 }
 .contacts-list-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -131,8 +134,11 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url("../images/background.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
+  background-size: cover;
   background-position: center center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -284,7 +290,7 @@ body {
   display: flex;
   justify-content: center;
   align-items:center;
-  margin-bottom: 30px;
+  padding-top: 16px;
 }
 .social-list-link{
   display: flex;
@@ -347,17 +353,15 @@ background-color: rgba(33, 150, 243, 1)
   }
   .company-list-item-link:hover,
   .company-list-item-link:focus{
-    border-color:rgba(33, 150, 243, 1)
+    border-color:rgba(33, 150, 243, 1);
+    border-radius: 4px;
   }
 .main-footer {
-  display: flex;
-  justify-content: center;
-  
+  padding-top: 60px;
   padding-bottom: 60px;
   background: rgba(47, 48, 58, 1);
 }
 .main-footer-container{
-  padding-top: 60px;
   width: auto;
 }
 .logo-footer-link {
@@ -398,23 +402,23 @@ background-color: rgba(33, 150, 243, 1)
 }
 .footer-container{
   display:flex;
+  align-items: baseline;
 }
 .social-footer-container{
   margin-left: 70px;
-  padding-top: 72px;
 }
 .social-list-footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 .social-footer-title{
+font-family: 'Roboto';
+font-style: normal;
 font-weight: 700;
-font-size: 26px;
+font-size: 14px;
 line-height: 16px;
-text-align: center;
 letter-spacing: 0.03em;
+text-transform: uppercase;
 color: rgba(255, 255, 255, 1);
 margin-bottom: 20px;
 }
@@ -466,38 +470,44 @@ margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(33, 33, 33, 1);
   border-color: transparent;
   padding-left: 22px;
   padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .route-list-btn:hover,
 .route-list-btn:focus {
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 1);
   background: rgba(33, 150, 243, 1);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .sample-list-item {
   margin-left: 30px;
   margin-top: 30px;
 }
-.sample-list-item:hover,
-.sample-list-item:focus {
+.sample-list-item-link{
+  display: block;
+}
+.sample-list-item-link:hover,
+.sample-list-item-link:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .wrapper {
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   padding-left: 24px;
+  padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   border: 1px solid rgba(238, 238, 238, 1);
