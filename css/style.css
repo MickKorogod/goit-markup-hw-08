@@ -91,12 +91,32 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: rgba(33, 33, 33, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-page {
+  position: relative;
+  display: inline-block;
+  color: rgba(33, 150, 243, 1);
+}
+.active-page::after {
+  content: "";
+  display: flex;
+  margin-top: 28px;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 2px;
 }
 .contacts-list-icon{
   margin-right: 10px;
   fill:rgba(117, 117, 117, 1);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-link {
   display: flex;
@@ -105,8 +125,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: rgba(117, 117, 117, 1);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -145,7 +167,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -156,10 +177,11 @@ body {
 }
 .modal-button {
   border: 1px solid var(rgba(33, 150, 243, 1));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
   display: flex;
   padding: 10px 32px;
   align-items: center;
@@ -170,6 +192,10 @@ body {
   letter-spacing: 0.06em;
   color: rgba(255, 255, 255, 1);
   background: rgba(33, 150, 243, 1);
+  cursor: pointer;
+  transition-property: color,background,border-shadow;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .benefits-container {
   display: flex;
@@ -233,6 +259,26 @@ body {
   letter-spacing: 0.03em;
   color: rgba(33, 33, 33, 1);
 }
+.services-list-item{
+  position: relative;
+}
+.services-list-description{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: auto;
+  padding-top:27px;
+  padding-bottom: 27px;
+  background:rgba(47, 48, 58, 0.8);
+  text-align: center;
+}
 .team {
   background: rgba(245, 244, 250, 1);
 }
@@ -293,6 +339,9 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
@@ -308,6 +357,9 @@ background-color: rgba(33, 150, 243, 1)
 }
 .social-list-icon {
   fill: rgba(175, 177, 184, 1);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .company-title{
@@ -336,9 +388,15 @@ background-color: rgba(33, 150, 243, 1)
     border-style: solid;
     border-color: rgba(175, 177, 184, 1);
     border-width: 1px;
+    transition-property: color,background-color,fill,border-color,border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .company-list-icon{
     fill:rgba(175, 177, 184, 1) ;
+    transition-property: color,background-color,fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .company-list-item-link:hover .company-list-icon,
   .company-list-item-link:focus .company-list-icon {
@@ -423,6 +481,9 @@ margin-bottom: 20px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-footer-link:hover .social-list-footer-icon,
@@ -442,7 +503,54 @@ margin-bottom: 20px;
 
 .social-list-footer-icon {
   fill: rgb(255, 255, 255);
+  transition-property: color,background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 528px;
+  height: 581px;
+  background:rgb(255, 255, 255) ;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.modal-close-icon{
+  padding: 0;
 }
 .route-list {
   display: flex;
@@ -471,6 +579,9 @@ margin-bottom: 20px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+  transition-property: color,background,background-color,fill,box-shadow,border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .route-list-btn:hover,
 .route-list-btn:focus {
@@ -492,6 +603,9 @@ margin-bottom: 20px;
 }
 .sample-list-item-link{
   display: block;
+  transition-property: color,background-color,fill,box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sample-list-item-link:hover,
 .sample-list-item-link:focus {
@@ -523,4 +637,31 @@ margin-bottom: 20px;
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
+}
+.sample-list-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px 63px 24px;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+.sample-list-item-link:hover .overlay,
+.sample-list-item-link:focus .overlay{
+  transform: translateY(0%);
 }
