@@ -103,8 +103,10 @@ body {
 }
 .active-page::after {
   content: "";
+  left: 0;
+  bottom: -34px;
   display: flex;
-  margin-top: 28px;
+  /* margin-top: 28px; */
   position: absolute;
   width: 100%;
   height: 4px;
@@ -176,7 +178,7 @@ body {
   margin-right: auto;
 }
 .modal-button {
-  border: 1px solid var(rgba(33, 150, 243, 1));
+  border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -263,6 +265,9 @@ body {
   position: relative;
 }
 .services-list-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -273,11 +278,8 @@ body {
   bottom: 0;
   left: 0;
   width: 370px;
-  height: auto;
-  padding-top:27px;
-  padding-bottom: 27px;
+  height: 70px;
   background:rgba(47, 48, 58, 0.8);
-  text-align: center;
 }
 .team {
   background: rgba(245, 244, 250, 1);
@@ -346,7 +348,6 @@ body {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
   fill: rgba(255, 255, 255, 1);
-  background-color: rgba(33, 150, 243, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -489,7 +490,6 @@ margin-bottom: 20px;
 .social-list-footer-link:hover .social-list-footer-icon,
 .social-list-footer-link:focus .social-list-footer-icon {
   fill: rgba(255, 255, 255, 1);
-  background-color: rgba(33, 150, 243, 1);
 }
 
 .social-list-footer-link:hover,
@@ -580,7 +580,7 @@ margin-bottom: 20px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  transition-property: color,background,background-color,fill,box-shadow,border-radius;
+  transition-property: color,background-color,box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
