@@ -334,6 +334,16 @@
                 </li>
             </ul>
         </div>
+        <form class="footer-subscription">
+            <label class="footer-subscription-label" for="footer-subscription-input">Подпишитесь на рассылку</label>
+            <input class="footer-subscription-input" name="user-subscription" type="email" id="footer-subscription-input" placeholder="E-mail">
+            <a class="footer-subscription-link link" href="">
+                <button class="footer-subscription-btn" type="submit">Подписаться</button>
+                <svg class="footer-subscription-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#send"></use>
+                </svg>
+            </a>
+        </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -344,6 +354,38 @@
             </use>
             </svg>
             </button>
+            <strong class="modal-description">Оставьте свои данные, мы вам перезвоним</strong>
+            <form class="action-form">
+            <label class="contact-form-field">Имя
+                <span class="contact-form-input-wrapper">
+                <input class="contact-form-input" type="text" name="user-name">
+                <svg class="contact-form-icon"> <use href="./images/sprite.svg#person-black"> </use> </svg>
+                </span>
+            </label> 
+            <label class="contact-form-field">Телефон
+                <span class="contact-form-input-wrapper">
+                <input class="contact-form-input" type="tel" name="user-number">
+                <svg class="contact-form-icon"> <use href="./images/sprite.svg#phone-black"> </use> </svg>
+                </span>
+            </label>
+            <label class="contact-form-field">Почта
+                <span class="contact-form-input-wrapper">
+                <input class="contact-form-input" type="email" name="user-mail">
+                <svg class="contact-form-icon"> <use href="./images/sprite.svg#email-black"> </use> </svg>
+                </span>
+            </label>
+           
+            <label class="contact-form-field">Комментарий
+            <textarea class="contact-form-message" placeholder="Введите текст" name="user-message"></textarea> 
+            </label>
+            <div class="user-agreement-box">
+            <input class="contact-form-checkbox visually-hidden" type="checkbox" name="user-agreement" id="user-agreement" required>
+            <label class="contact-form-checkbox-description" for="user-agreement">Соглашаюсь с рассылкой и принимаю&nbsp<a class="contact-form-checkbox-link" href="">
+                Условия договора</a>
+            </label>
+            </div>
+            <button class="contact-btn-submit" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -26,7 +26,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding: 0;
 }
 .section {
   padding-top: 94px;
@@ -195,9 +195,6 @@ body {
   color: rgba(255, 255, 255, 1);
   background: rgba(33, 150, 243, 1);
   cursor: pointer;
-  transition-property: color,background,border-shadow;
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .benefits-container {
   display: flex;
@@ -494,7 +491,7 @@ margin-bottom: 20px;
 
 .social-list-footer-link:hover,
 .social-list-footer-link:focus {
-  background-color: rgba(33, 150, 243, 1)
+  background-color: rgba(33, 150, 243, 1);
 }
 
 .social-list-item-footer:not(:last-child) {
@@ -507,6 +504,68 @@ margin-bottom: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.footer-subscription{
+  margin-left: 93px;
+}
+.footer-subscription-label{
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+.footer-subscription-input{
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: transparent;
+padding-left: 16px;
+padding-top: 15px;
+padding-bottom: 15px;
+color: rgb(255, 255, 255);
+}
+.footer-subscription-input::placeholder{
+  color:rgba(255, 255, 255, 0.6);
+}
+.footer-subscription-link{
+  position: relative;
+  display: inline-block;
+  margin-left: 12px;
+}
+.footer-subscription-btn{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  background: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.footer-subscription-icon{
+  position: absolute;
+ right: 28px;
+ bottom: 13px;
+ padding: 0;
 }
 .backdrop{
   position: fixed;
@@ -529,6 +588,7 @@ margin-bottom: 20px;
   transform: translate(-50%,-50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background:rgb(255, 255, 255) ;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -551,6 +611,151 @@ margin-bottom: 20px;
 }
 .modal-close-icon{
   padding: 0;
+}
+.modal-description{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+}
+.contact-form-field{
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color:rgba(117, 117, 117, 1);
+  
+  letter-spacing: 0.01em;
+}
+.contact-form-input{
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:hover,
+.contact-form-input:focus{
+  border-color: rgba(33, 150, 243, 1);
+  outline: none;
+}
+.contact-form-input:hover +.contact-form-icon,
+.contact-form-input:focus +.contact-form-icon{
+  fill: rgba(33, 150, 243, 1);
+}
+.contact-form-icon{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input-wrapper{
+position: relative;
+display: block;
+margin-top: 4px;
+margin-bottom: 10px;
+}
+.contact-form-message{
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-message:hover,
+.contact-form-message:focus {
+  border-color: rgba(33, 150, 243, 1);
+  outline: none;
+}
+.contact-form-message::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+}
+.contact-form-checkbox:checked + .contact-form-checkbox-description::before{
+  background-image: url("../images/ok.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color:rgba(33, 150, 243, 1);
+  border: transparent;
+  border-radius: 2px;
+}
+.contact-form-checkbox:focus + .contact-form-checkbox-description::before{
+  border-color: rgba(33, 150, 243, 1) ;
+}
+.contact-form-checkbox-description{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color:rgba(117, 117, 117, 1);
+}
+.contact-form-checkbox-description::before{
+  content:"";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 1);
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.user-agreement-box{
+  margin-bottom: 30px;
+}
+.contact-btn-submit{
+display: block;
+margin: 0 auto;
+width: 200px;
+height: auto;
+background: rgba(24, 140, 232, 1);
+border: transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: rgba(255, 255, 255, 1);
+cursor: pointer;
+transition-property:background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-checkbox-link{
+  outline: none;
+  color:rgba(33, 150, 243, 1) ;
+  transition-property:color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .route-list {
   display: flex;
