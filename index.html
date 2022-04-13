@@ -336,13 +336,14 @@
         </div>
         <form class="footer-subscription">
             <label class="footer-subscription-label" for="footer-subscription-input">Подпишитесь на рассылку</label>
+            <span class="footer-subscription-wrapper">
             <input class="footer-subscription-input" name="user-subscription" type="email" id="footer-subscription-input" placeholder="E-mail">
-            <a class="footer-subscription-link link" href="">
-                <button class="footer-subscription-btn" type="submit">Подписаться</button>
-                <svg class="footer-subscription-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#send"></use>
-                </svg>
-            </a>
+                <button class="footer-subscription-btn" type="submit">Подписаться
+                    <svg class="footer-subscription-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#send"></use>
+                    </svg>
+                </button>
+                </span>
         </form>
         </div>
     </footer>
@@ -375,7 +376,7 @@
                 </span>
             </label>
            
-            <label class="contact-form-field">Комментарий
+            <label class="contact-form-textarea">Комментарий
             <textarea class="contact-form-message" placeholder="Введите текст" name="user-message"></textarea> 
             </label>
             <div class="user-agreement-box">
