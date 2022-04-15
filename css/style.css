@@ -608,8 +608,8 @@ color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.modal-close-btn:hover.modal-close-icon,
-.modal-close-btn:focus.modal-close-icon{
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon{
   fill: rgba(33, 150, 243, 1);
 }
 .modal-close-icon{
