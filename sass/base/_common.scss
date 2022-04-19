@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

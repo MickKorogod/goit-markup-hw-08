@@ -1,0 +1,67 @@
+.footer-subscription {
+    margin-left: 93px;
+}
+
+.footer-subscription__label {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-subscription__wrapper {
+    display: flex;
+}
+
+.footer-subscription__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+.footer-subscription__btn {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;
+    background: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: transparent;
+    margin-left: 12px;
+}
+
+.footer-subscription__icon {
+    padding: 0;
+    margin-left: 10px;
+}

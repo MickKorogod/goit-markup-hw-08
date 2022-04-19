@@ -1,0 +1,42 @@
+.route-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.route-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.route-list-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+    border-color: transparent;
+    border-radius: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(33, 150, 243, 1);
+        box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}
+

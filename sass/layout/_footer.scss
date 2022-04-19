@@ -1,0 +1,102 @@
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgba(47, 48, 58, 1);
+}
+
+.main-footer-container {
+    flex-grow: 1;
+}
+
+.logo-footer-link {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.address-list__link-first {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.address-list__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-footer-container {
+    margin-left: 70px;
+}
+
+.social-list-footer {
+    display: flex;
+    align-items: center;
+}
+
+.social-footer-container__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.social-list-footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: rgba(33, 150, 243, 1);
+    }
+}
+
+.social-list-footer__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-footer__icon {
+    fill: rgb(255, 255, 255);
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .social-list-footer__link:hover &,
+    .social-list-footer__link:focus & {
+        fill: rgba(255, 255, 255, 1);
+    }
+
+}

@@ -1,0 +1,52 @@
+.company__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 50px;
+}
+
+.company-list {
+    display: flex;
+    justify-content: center;
+}
+
+.company-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.company-list__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgba(175, 177, 184, 1);
+    border-width: 1px;
+    border-radius: 4px;
+    transition-property: color, background-color, fill, border-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border-color: rgba(33, 150, 243, 1);
+        border-radius: 4px;
+    }
+}
+
+.company-list__icon {
+    fill: rgba(175, 177, 184, 1);
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .company-list__item-link:hover &,
+    .company-list__item-link:focus & {
+        fill: rgba(33, 150, 243, 1);
+    }
+}
+
+
