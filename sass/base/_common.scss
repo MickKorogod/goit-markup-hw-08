@@ -10,6 +10,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -20,14 +21,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.list {
-    list-style: none;
-}
-
-.link {
+a {
     text-decoration: none;
 }
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 50px;
 }
