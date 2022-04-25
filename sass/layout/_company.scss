@@ -34,8 +34,8 @@
     transition-property: color, background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .company-list__item-link:hover &,
-    .company-list__item-link:focus & {
+    .company-list__link:hover &,
+    .company-list__link:focus & {
         fill: rgba(33, 150, 243, 1);
     }
 }

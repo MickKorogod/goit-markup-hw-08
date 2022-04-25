@@ -442,8 +442,8 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-list__item-link:hover .company-list__icon,
-.company-list__item-link:focus .company-list__icon {
+.company-list__link:hover .company-list__icon,
+.company-list__link:focus .company-list__icon {
   fill: #2196f3;
 }
 
