@@ -4,4 +4,31 @@
 
 .main-header__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu-btn{
+    background-color: transparent;
+    border:none;
+    padding: 0;
+    line-height: 0;
+}
+.header-menu-btn__icon{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .header-menu-btn:hover & {
+        fill: rgba(33, 150, 243, 1);
+    }
+    
+    .header-menu-btn:focus &{
+        fill: rgba(33, 150, 243, 1);
+    }
+}
+
+@media screen and(min-width:768px) {
+    .header-menu-btn{
+        display: none;
+    }
+
 }
