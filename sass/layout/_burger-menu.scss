@@ -1,0 +1,107 @@
+.mobile-menu{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-menu__container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 100vh;
+}
+.menu-close-btn{
+    position: absolute;
+    top:10px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    &:hover .menu-close-icon,
+    &:focus .menu-close-icon{
+        fill:rgba(33, 150, 243, 1) ;
+
+    }
+}
+.menu-close-icon{
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-navigation-list__link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgb(0, 0, 0);
+}
+.navigation-list__link--active{
+    color: rgba(33, 150, 243, 1);
+}
+.menu-navigation-list__item:not(:last-child){
+    margin-bottom: 32px;
+}
+.menu-contacts-list{
+    align-self: flex-end;
+}
+.menu-contacts-list__link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+}
+.menu-contacts-list__link--color{
+    color: rgba(33, 150, 243, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+}
+
+.menu-contacts-list__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-social-list{
+    display: flex;
+    align-self: flex-end;
+}
+.menu-social-list__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(33, 150, 243, 1);
+    padding-right: 10px;
+    &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+    }
+}

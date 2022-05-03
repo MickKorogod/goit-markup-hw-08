@@ -160,8 +160,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     &::before {
@@ -232,6 +232,10 @@
         width: 450px;
     }
     
+    .contact-form-checkbox-description{
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 @media screen and(min-width:1200px) {
