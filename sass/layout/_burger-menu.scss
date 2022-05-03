@@ -13,6 +13,7 @@
     z-index: 100;
 }
 .mobile-menu.is-open {
+    position: fixed;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -21,6 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    padding-right: 25px;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;

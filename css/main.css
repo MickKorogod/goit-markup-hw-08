@@ -1307,6 +1307,7 @@ a {
 }
 
 .mobile-menu.is-open {
+  position: fixed;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1316,6 +1317,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding-right: 25px;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
