@@ -10,6 +10,7 @@
     pointer-events: none;
     background-color: rgb(255, 255, 255);
     overflow: auto;
+    z-index: 100;
 }
 .mobile-menu.is-open {
     opacity: 1;
