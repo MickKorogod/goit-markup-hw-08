@@ -556,6 +556,10 @@ a {
   color: #757575;
 }
 
+.team-list__photo {
+  width: 100%;
+}
+
 .section--other-background {
   background: #f5f4fa;
 }
@@ -1273,6 +1277,10 @@ a {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.sample-list-pic {
+  width: 100%;
 }
 
 .sample-list-wrapper {
