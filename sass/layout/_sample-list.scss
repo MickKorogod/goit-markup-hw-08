@@ -61,8 +61,14 @@
         }
     }
 
-    .wrapper--height{
-        height: 130px;
+    .sample-list-item-link{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .wrapper{
+        flex-grow: 1;
     }
 }
 @media screen and(min-width:1200px) {

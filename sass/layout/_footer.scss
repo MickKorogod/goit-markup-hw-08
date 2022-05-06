@@ -1,6 +1,8 @@
 
 .main-footer {
     background: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .main-footer-container {
     flex-grow: 1;
@@ -95,25 +97,19 @@
 }
 
 @media screen and(min-width:768px) and(max-width:1199px) {
-    .main-footer{
-        position: relative;
-        height: 463px;
-    }
     .footer-container{
-    position: relative;}
-
-    .main-footer-container{
-        position: absolute;
-        left: 76px;
-        top: 0;
-        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .social-footer-container{
-        position: absolute;
-        right: 89px;
-        top: 0;
+        margin-right: 74px;
     }
-    
+    .main-footer-container{
+        margin-right: 165px;
+        margin-left: 61px;
+   
+    }
 }
 
 @media screen and(min-width:1200px) {
@@ -139,6 +135,7 @@
     
     .social-footer-container {
             margin-left: 70px;
+            margin-bottom: 0;
         }
     .social-footer-container__title{
         text-align: left;

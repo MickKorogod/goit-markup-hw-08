@@ -6,13 +6,11 @@
             url("../images/mobile-background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
-        max-width: 480px;
+        background-position: center;
         margin-left: auto;
         margin-right: auto;
     }
 .hero__main-title {
-            width: 360px;
             height: auto; 
             font-family: 'Roboto';
             font-style: normal;
@@ -34,8 +32,10 @@
             }
 
         @media screen and(min-width:768px) {
+            .hero__main-title{
+                width: 360px;
+            }
             .hero{
-                max-width: 768px;
                 background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-background.jpg")
             }
             @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {

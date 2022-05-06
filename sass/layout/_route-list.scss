@@ -5,6 +5,9 @@
 }
 .route-list-item:not(:last-child) {
     margin-right: 8px;
+    
+}
+.route-list-item:not(:nth-last-child(-n+2)){
     margin-bottom: 15px;
 }
 
